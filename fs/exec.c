@@ -1898,10 +1898,10 @@ static int do_execveat_common(int fd, struct filename *filename,
 			      struct user_arg_ptr argv,
 			      struct user_arg_ptr envp,
 			      int flags)
-/*{
-	ksu_handle_execveat(&fd, &filename, &argv, &envp, &flags);
+{
+	//ksu_handle_execveat(&fd, &filename, &argv, &envp, &flags);
 	return __do_execve_file(fd, filename, argv, envp, flags, NULL);
-}*/
+}
 
 int do_execve_file(struct file *file, void *__argv, void *__envp)
 {
